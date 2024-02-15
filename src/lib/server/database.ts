@@ -197,6 +197,15 @@ to return something like
 
 */
 export function getPaginatedRecordingsByRole(role: string, page: number, pageSize: number) {
+	if (!role) {
+		throw new Error('Role is required');
+	}
+	if (!page || isNaN(page)) {
+		throw new Error('Page number is required');
+	}
+	if (!pageSize || isNaN(pageSize)) {
+		throw new Error('Page size is required');
+	}
 	const filteredByRoleRecordings = MEETING_RECORDINGS.filter((recording) =>
 		recording.accessibleByRoles.includes(role)
 	);
