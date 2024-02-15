@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { PageData } from './$types';
 	function logOut() {
 		document.cookie =
 			'sessionToken=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Strict';
 	}
-	export let data: PageData;
+	export let data;
 	const { currentUser, recordings, totalPages, currentPage } = data ?? [];
 </script>
 

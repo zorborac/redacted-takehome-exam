@@ -15,7 +15,7 @@ import type { RequestHandler } from './$types';
 // }
 // Would normally be a wrapper for a SQL query or an ORM method
 
-export const GET: RequestHandler = async ({ request, cookies, url }) => {
+export const GET: RequestHandler = async ({ cookies, url }) => {
 	console.log({ url, cookies: cookies.getAll() });
 	// normally we would have a sessionToken or some other form of authentication in the cookies
 	// and we would use that to retrieve the user's information from the database
