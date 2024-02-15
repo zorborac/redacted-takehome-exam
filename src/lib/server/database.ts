@@ -218,6 +218,7 @@ export function getPaginatedRecordingsByRole(role: string, page: number, pageSiz
 	const recordsAndMetadata = {
 		recordings: paginatedRecordings,
 		currentPage: page,
+		// Note, page size not really used right now
 		pageSize: pageSize,
 		totalPages: Math.ceil(filteredByRoleRecordings.length / pageSize),
 		totalRecordings: filteredByRoleRecordings.length
