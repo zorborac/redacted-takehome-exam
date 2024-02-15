@@ -114,10 +114,10 @@ export const MEETING_RECORDINGS: MeetingRecording[] = [
 	},
 	{
 		id: 108,
-		title: 'Customer Feedback Session',
+		title: 'Customer Support Bugs',
 		thumbnailUrl: 'https://img.realiterate.com/thumb3.png',
 		recordingPageUrl: 'https://example.com/recordings/rec-108',
-		accessibleByRoles: ['Sales', 'Management']
+		accessibleByRoles: ['Management', 'Engineering']
 	},
 	{
 		id: 109,
@@ -180,7 +180,7 @@ export const MEETING_RECORDINGS: MeetingRecording[] = [
 		title: 'Customer Feedback Session',
 		thumbnailUrl: 'https://img.realiterate.com/thumb2.png',
 		recordingPageUrl: 'https://example.com/recordings/rec-117',
-		accessibleByRoles: ['Sales', 'Management']
+		accessibleByRoles: ['Sales', 'Engineering']
 	}
 ];
 
